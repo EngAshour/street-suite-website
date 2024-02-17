@@ -1,0 +1,62 @@
+.feed-item {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  gap: 10px;
+  height: 59px;
+  align-items: center;
+  background: var(--light-gray-clr);
+  border-radius: 7.69px;
+  margin-block-end: 16px;
+}
+.expanded-box {
+  text-align: left;
+  padding-inline-start: 45px;
+  padding-inline-end: 40px;
+  padding-block-start: 50px;
+  padding-block-end: 30px;
+  margin-block-end: 15px;
+  color: var(--white-clr);
+  margin-block-start: -30px;
+  background-color: #181818;
+  border-radius: 10px;
+}
+.feed-item div {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.item-name,
+.item-value,
+.item-risk {
+  color: var(--white-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-name {
+  gap: 33.76px;
+}
+.item-value {
+  gap: 37.99px;
+}
+.item-risk {
+  gap: 26.38px;
+}
+.item-percentage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25.32px;
+}
+.item-divider {
+  position: relative;
+}
+.item-divider::before {
+  position: absolute;
+  content: "";
+  left: -5px;
+  height: 36px;
+  border: 1px solid #414040;
+}

@@ -1,5 +1,6 @@
 import Sidebar from "../components/Sidebar/Sidebar";
 import Header from "../components/Header/Header";
+import Feed from "../components/Feed/Feed";
 
 import "./Alerts.css";
 
@@ -10,6 +11,7 @@ export default function Alerts() {
       <Sidebar />
       <section className="alerts">
         <Header />
+        <Feed />
       </section>
     </main>
   );

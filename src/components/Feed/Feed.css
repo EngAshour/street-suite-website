@@ -1,0 +1,5 @@
+.feed {
+  height: calc(100% - 112.6px);
+  overflow: auto;
+  padding-inline-end: 7.4px;
+}
