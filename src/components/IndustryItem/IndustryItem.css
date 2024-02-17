@@ -1,0 +1,22 @@
+.industry-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 10px;
+  margin-inline-start: 25px;
+}
+.industry-item span {
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--white-clr);
+}
+.industry-item::before {
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  position: absolute;
+  left: -12px;
+  height: 25px;
+  border: 0.38px solid var(--white-clr);
+  border-radius: 0.38px;
+}
