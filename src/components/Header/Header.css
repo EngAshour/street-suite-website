@@ -1,0 +1,24 @@
+.header {
+  margin-bottom: 39px;
+  display: flex;
+  align-items: center;
+}
+.page-title {
+  position: relative;
+  flex: 1;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: left;
+  color: var(--white-clr);
+}
+.page-title::before {
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  position: absolute;
+  left: -19px;
+  height: 48px;
+  border: 5px solid var(--accent-clr);
+  border-radius: 5px;
+}

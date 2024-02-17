@@ -1,0 +1,44 @@
+.alerts {
+  flex: 3;
+  position: relative;
+}
+
+main {
+  padding-top: 26px;
+  display: flex;
+  gap: 41.77px;
+  height: 100%;
+}
+.placeholder {
+  flex: 0.5047;
+}
+
+.alerts::before {
+  --shadow-height: 100px;
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: calc(100% - var(--shadow-height));
+  left: 0;
+  width: 100%;
+  height: var(--shadow-height);
+  box-shadow: inset 0px -160px 19px -104px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 4px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
